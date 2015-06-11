@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2048 Undo</title>
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game"><!--Changes www.nitinpathak.esy.es-->
+      <p class="game-intro"><strong>UNDO</strong> Enabled ;) Have Fun!</p>
+      <a class="restart-button">New Game (r)</a>
+      <a class="restart-button undo-button disabled">Undo (u)</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+    <p>
+    <strong class="important">Note:</strong> This is the <strong>modded</strong> version of 2048 that includes unlimited <strong>UNDO,</strong> which stores locally i.e. stays even if you refresh the webpage and it saves only <strong>VALID</strong> moves. You can play it on your phone via <a href="http://np1810.github.io">http://np1810.github.io</a></p>
+    <hr>
+    <p align="center">
+    Created by <a href="http://nitinpathak.esy.es" target="_blank">Nitin Pathak</a>
+    </p>
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+</body>
+</html>
